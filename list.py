@@ -13,3 +13,28 @@ print(l1.index(3))
 print(tup.count(255))
 
 #Tuple = () List = []
+
+#   List comprehension:
+
+#   Usual method:
+
+name = "Saismaran Hota"
+nameList = []
+for characters in name:
+    nameList.append(characters)         #Remember the indentation
+print(nameList)
+
+#We can accomplish the same using
+
+nameList = [characters for characters in name]
+
+print(nameList)
+
+numList = [ num+num for num in range(0,10) ]
+print(numList)      #print 0, 2, 4, 6, 8, 10, 12, 14, 16, 18
+
+#printing even squre number
+
+print([ Int**2 for Int in range(0,11) if Int%2==0]) #0, 4, 16, 36, 64, 100]
+
+# [ (Variable Update) for (initialise variable name) in condition/range body/logic part]

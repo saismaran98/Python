@@ -31,7 +31,7 @@ for items in itemList:
     if items == 'Chowmin':
         break        #Breaks loop when item = chowmin hence only print Meggi
     print(items)
-    
+
 #---------------------------------FOR LOOP--------------------------------------
 List = [1,2,'3rd']
 
@@ -65,3 +65,56 @@ print("\n")
 for values in myDict.values():
     print(values,end=" ")
 print("\n")
+
+#--------------------------------------------------Useful Operators:
+
+#Range
+
+for num in range(10):
+    print(num)  #print 0 to 9
+for num in range(5,10):
+    print(num)  #print 5 to 9
+
+#range(start, end, step size)
+
+#Efficient Way = typecast to a list and print to save memory
+
+print(list(range(0,10,2)))  # prints : [0, 2, 4, 6, 8]
+
+#--------------Zip
+
+List1 = ['a','b','c','d']
+List2 = [1,2,3,4]
+
+comboList = list(zip(List1,List2))
+print(comboList)
+
+#   List  Unpacking:
+
+for a,b in comboList:
+    print(a+" "+str(b))
+
+#-----------------------------------------------------------IN KeyWord Opetator
+#in Function to check if an item is present in the list
+
+print(('b',2) in comboList)
+
+print('Much' in 'nothingMuch') #Check for substring returns true
+
+print('key1' in {'key1':'value1'})  #returns true
+print('value1' in {'key1':'value1'}.values())   #returns true
+
+from random import shuffle
+
+print(min(List1))       #Returns a
+
+shuffle(List2)
+print(List2)    #Returns randomm shuffeled list.
+
+#RandInt
+
+from random import randint
+randNo = randint(0,100)
+print(randNo)   #Return random no bet^n 0-100 and the return type is 'Method'
+
+
