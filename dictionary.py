@@ -18,4 +18,3 @@ print(priceOf)
 print(f'Values: {priceOf.keys()}') # returns the set of all keys
 print(priceOf.values())     #returns the value of all keys
 
-  
