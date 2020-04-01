@@ -38,3 +38,15 @@ print(numList)      #print 0, 2, 4, 6, 8, 10, 12, 14, 16, 18
 print([ Int**2 for Int in range(0,11) if Int%2==0]) #0, 4, 16, 36, 64, 100]
 
 # [ (Variable Update) for (initialise variable name) in condition/range body/logic part]
+
+#--------------Nested for loop using List comprehension
+List = []
+for x in [2,3,4]:
+    for y in [100,1000,10]:
+        List.append(x*y)
+
+print( [listEmems for listEmems in List] )
+
+#Does same job as Upeer nested Loops With readability sacrifise: @Depricated
+
+print( [elementX*elementY for elementX in [2,3,4] for elementY in [100,1000,10]] )
