@@ -1,11 +1,13 @@
 
-def skyline(s):
-    result = ""
-    for i, v in enumerate(s):
-        if i%2==0:
-            result = ''.join(v.upper())
-        else:
-            result = ''.join(v.lower())
-    return result
+#MAKES TWENTY: Given two integers, return True if the sum of the integers is 20 or if one
+#of the integers is 20. If not, return False
 
-print(skyline("Thiismyname"))
+def isTwenty(n1,n2):
+    if n1==20 or n2==20:
+        return True
+    elif n1+n2==20:
+        return True
+    else:
+        return False
+
+print(isTwenty(10,10))
