@@ -23,7 +23,7 @@ def animal(string1):
     string1 = string1.split(" ")
     return string1[0][0].lower() == string1[1][0].lower()
 
-print(animal("This shreater"))
+print("Animal Cracker",animal("This Shreater"))
 
 
 #MAKES TWENTY: Given two integers, return True if the sum of the integers is 20 or if one
@@ -55,3 +55,24 @@ def capitalize(name):
 
 print(capitalize("saismaran"))
 
+#Given the word return the word reversed
+
+
+def reverseSentense(sentence):
+    revSen=""
+    i = 1
+    lengthOfSentence = sentence.split()
+    reverse = lengthOfSentence[::-1]
+    revStr = " ".join(reverse)
+    return revStr
+
+
+
+print(reverseSentense("I am home"))
+
+#Given number is within the range of 10 from 100, 200
+
+def checkAbsMethod(number):
+    return (abs(100-number)<=10 or abs(200-number)<=10)         #difference betwn number and 100/200 is within 10 or not ex 94,204
+
+print(checkAbsMethod(int(94)))
