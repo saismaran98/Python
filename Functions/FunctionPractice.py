@@ -24,3 +24,34 @@ def animal(string1):
     return string1[0][0].lower() == string1[1][0].lower()
 
 print(animal("This shreater"))
+
+
+#MAKES TWENTY: Given two integers, return True if the sum of the integers is 20 or if one
+#of the integers is 20. If not, return False
+
+def isTwenty(n1,n2):
+    if n1==20 or n2==20:
+        return True
+    elif n1+n2==20:
+        return True
+    else:
+        return False
+
+print(isTwenty(10,10))
+
+
+# OLD MACDONALD: Write a function that capitalizes the first and fourth letters of a name
+# old_macdonald('macdonald') --> MacDonald
+
+def capitalize(name):
+    if len(name)==0:
+        return ""
+    elif len(name)<4:
+        return ""+name[0].upper()+name[1:]
+    elif len(name)==4:
+        return ""+name[0].upper()+name[1:3]+name[3].upper()
+    else:
+        return ""+name[0].upper()+name[1:3]+name[3].upper()+name[4:]
+
+print(capitalize("saismaran"))
+
