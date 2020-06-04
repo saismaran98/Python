@@ -23,7 +23,7 @@ for items in itemList:
 
 for items in itemList:
     if items == 'Maggi':
-        continue        #When item = Meggi it will go to the top and wont print Meggi
+        continue        #When item = Maggi it will go to the top and wont print Meggi
     print(items)
 
 
