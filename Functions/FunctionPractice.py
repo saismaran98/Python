@@ -76,3 +76,7 @@ def checkAbsMethod(number):
     return (abs(100-number)<=10 or abs(200-number)<=10)         #difference betwn number and 100/200 is within 10 or not ex 94,204
 
 print(checkAbsMethod(int(94)))
+
+#Given a array return true if it has two consecutive 3 somewhere
+
+arr = [1,2,3]

@@ -14,7 +14,7 @@ else:
 #   Continue : Goes to the top of the loop
 #   Pass     : Does nothing at all
 
-itemList = ['Meggi','Chowmin','Soya Sause']
+itemList = ['Maggi','Chowmin','Soya Sause']
 
 for items in itemList:
     #Wanna 'do nothing' or debugging purpouse hence no code inside the loop
@@ -22,7 +22,7 @@ for items in itemList:
     pass
 
 for items in itemList:
-    if items == 'Meggi':
+    if items == 'Maggi':
         continue        #When item = Meggi it will go to the top and wont print Meggi
     print(items)
 
