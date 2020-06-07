@@ -79,4 +79,62 @@ print(checkAbsMethod(int(94)))
 
 #Given a array return true if it has two consecutive 3 somewhere
 
-arr = [1,2,3]
+def has_33(numArr):
+
+    for i in numArr:
+        if(numArr[i:i+2]) == [3,3]:     #Grabbing the slice of the array and comparing if its 3,3 Alternative: if nums[i] == 3 and nums[i+1] == 3: (code)
+            return True
+    return False
+
+print(has_33([1,3,3]))  #returns True
+
+#Given a string return a string with all char*3 times.
+
+def paper_doll(text):
+    result = ""
+    for char in text:
+        result += char*3
+    return result
+
+print("PaperDoll: "+paper_doll("Hello"))
+
+#BlackJack GIven three integes between 1 and 11 return sum if sum <= 21, if sum>21 and 11 is there in array reduce sum by 10 and return if sum >21 return bust
+
+def blackjack(a,b,c):
+
+    if(sum([a,b,c])<21):
+        return sum([a,b,c])
+    else:
+        if(a==11 or b==11 or c==11):
+            newSum = sum([a,b,c])-10        #or elif 11 in [a,b,c] and sum([a,b,c]) -10<=21: return sum([a,b,c])-10
+            if newSum>21:
+                return "BUST"
+            else:
+                return newSum
+
+
+    return "BUST"
+print(blackjack(9,9,11))
+
+#Summer_69:
+
+def summer_69(arr):
+    total = 0
+    add = True
+
+    for num in arr:
+        while add:
+            if num != 6 :
+                total+= num
+                break
+            else:
+                add = False
+
+        while not add:
+            if num != 9:
+                break
+            else:
+                add = True
+                break
+    return total
+print(summer_69([2,1,6,9,11]))
