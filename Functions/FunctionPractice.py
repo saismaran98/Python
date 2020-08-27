@@ -138,3 +138,40 @@ def summer_69(arr):
                 break
     return total
 print(summer_69([2,1,6,9,11]))
+
+def upper_lower(string):
+    #maintain a dictionary insted of a counter to make it simple and readable.
+    dictionary = {'upper':0,'lower':0}  #key upper -> initial value 0 and key lower -> initail value 0
+
+    for character in string:
+        if(character.isupper()):
+            dictionary['upper'] += 1
+        elif(character.islower()):
+            dictionary['lower'] +=1
+        else:
+            pass
+    print(f'upper_count = {dictionary["upper"]} and lower_count = {dictionary["lower"]}')       #since you use 'single quotes' outside use "double quotes" inside else you get an error.
+
+
+upper_lower("SaismaranHOta")
+
+#take a list and return the unieq element in the list
+
+def unique(lst):
+    return list(set(lst))   #we convert list to set and as set cannot contain duplicate elements we then conver it back to list and return it.
+
+print(unique([1,1,1,4,5,6,3]))
+
+#check pallindrome
+
+def pallindrome(string):
+    #remove spaces from the string
+    string.replace(' ','')
+
+    #check pallindrome
+    if string == string[::-1]:
+        return True
+    else:
+        return False
+
+print(pallindrome("sas"))
